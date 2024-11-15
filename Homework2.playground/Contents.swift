@@ -169,15 +169,27 @@ print("\nРозділ 1.3 Псевдоніми\n")
 
  */
 
+typealias Preassure = Double
+typealias Humidity = Double
+typealias Temperature = Double
+
+let yesterdayPreassure: Preassure = 1020.2
+let yesterdayHumidity: Humidity = 751.1
+let yesterdayTemperature: Temperature = 3
+
 print("Погода вчора:")
-print("Тиск: hPa")
-print("Вологість: %")
-print("Температура: C")
+print("Тиск: \(yesterdayPreassure) hPa")
+print("Вологість: \(yesterdayHumidity) %")
+print("Температура: \(yesterdayTemperature) C")
+
+let todayPreassure: Preassure = 1010.2
+let todayHumidity: Humidity = 752.1
+let todayTemperature: Temperature = 4
 
 print("\nПогода сьогодні:")
-print("Тиск: hPa")
-print("Вологість: %")
-print("Температура: C")
+print("Тиск: \(todayPreassure) hPa")
+print("Вологість: \(todayHumidity) %")
+print("Температура: \(todayTemperature) C")
 
 
 print("\nРозділ 1.4 Кортежі\n")
