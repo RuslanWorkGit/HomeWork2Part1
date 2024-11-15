@@ -91,21 +91,43 @@ print("\nРозділ 1.2 Змінні\n")
 
  */
 
+let userName = "Ruslan"
+let userSurname = "Lyulka"
+var userAge: UInt8 = 17
+var userHeight: Float = 186.6
+var userWeigth: Float = 72.7
+var isMarried: Bool = false
+
 print("Інформація за 2018 р.:")
-print("Ім'я: ")
-print("Прізвище: ")
-print("Вік: ")
-print("зріст: см")
-print("Вага: кг")
-print("У шлюбі: ")
+print("Ім'я: \(userName)")
+print("Прізвище: \(userSurname)")
+print("Вік: \(userAge)")
+print("зріст: \(userHeight) см")
+print("Вага: \(userWeigth) кг")
+
+if isMarried {
+    print("User \(userName + " " + userSurname) is married")
+} else {
+    print("User \(userName + " " + userSurname) isn't married")
+}
+ 
+userAge += 6
+userHeight += 3
+userWeigth += 10
+isMarried.toggle()
 
 print("\nІнформація за поточний рік:")
-print("Ім'я: ")
-print("Прізвище: ")
-print("Вік: ")
-print("зріст: см")
-print("Вага: кг")
-print("У шлюбі: ")
+print("Ім'я: \(userName)")
+print("Прізвище: \(userSurname)")
+print("Вік: \(userAge)")
+print("зріст: \(userHeight) см")
+print("Вага: \(userWeigth) кг")
+
+if isMarried {
+    print("User \(userName + " " + userSurname) is married")
+} else {
+    print("User \(userName + " " + userSurname) isn't married")
+}
 
 
 print("\nРозділ 1.3 Псевдоніми\n")
