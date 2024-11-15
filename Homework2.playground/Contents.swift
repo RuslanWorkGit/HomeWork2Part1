@@ -29,13 +29,22 @@ print("Розділ 1.1 Константи\n")
      let myPetName: String = "Any Pet Name"
 
      print("Ім'я хатньої тварини: \(myPetName)")
-
  */
 
-print("Ім'я хатньої тварини: ")
-print("Вага хатньої тварини: кг")
-print("Вік хатньої тварини: років")
-print("Хатня тварина голодна: ")
+let petName = "Tyson"
+let petWeight: Double = 32.2
+let petAge: UInt8 = 3
+let petIsHungry: Bool = false
+
+print("Ім'я хатньої тварини: \(petName)")
+print("Вага хатньої тварини: \(petWeight) кг")
+print("Вік хатньої тварини: \(petAge)років")
+
+if petIsHungry {
+    print("Pet is Hungry, prepare food!!")
+} else {
+    print("Pet is not hungry, good job!!")
+}
 
 
 print("\nРозділ 1.2 Змінні\n")
