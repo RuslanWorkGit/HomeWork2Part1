@@ -225,16 +225,19 @@ print("\nРозділ 1.4 Кортежі\n")
 
  */
 
-print("Прізвище: ")
-print("Вік: ")
-print("Зріст: см")
-print("Вага: кг")
-print("У шлюбі: ")
+let profileInfo: (surName: String, age: UInt8, height: Float, weight: Float, isMerired: Bool) = (userSurname, userAge, userHeight, userWeigth, isMarried)
 
+print("Прізвище: \(profileInfo.surName)")
+print("Вік: \(profileInfo.age)")
+print("Зріст: \(profileInfo.height) см")
+print("Вага: \(profileInfo.weight) кг")
+print("У шлюбі: \(profileInfo.isMerired ? "User is merried" : "User is not merried") ")
+
+let weatherInfo: (preassure: Preassure, humidity: Humidity, temperature: Temperature) = (todayPreassure, todayHumidity, todayTemperature)
 print("\nІнфорація про погоду:")
-print("Тиск: hPa")
-print("Вологість: %")
-print("Температура: C")
+print("Тиск: \(weatherInfo.preassure) hPa")
+print("Вологість: \(weatherInfo.humidity) %")
+print("Температура: \(weatherInfo.temperature) C")
 
 
 print("\nРозділ 1.5 Опціонали\n")
